@@ -1,4 +1,4 @@
-# Some header 1
+### Some header 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum urna id ligula pharetra, vitae iaculis erat maximus.
 
