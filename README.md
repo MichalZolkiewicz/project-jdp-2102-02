@@ -16,7 +16,7 @@ Project is not uploaded to remote server yet.
 
 ### Running the project
 
-In order to launch project You you need to run EcommerceeApplication class. 
+In order to launch project, You you need to run EcommerceeApplication class. 
 Endpoints operation can be checked on http://localhost:8080 address.
 
 ### Endpoints description
