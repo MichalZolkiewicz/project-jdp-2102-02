@@ -37,7 +37,7 @@ User
 * /v1/user/blockUser - PUT method, userId
 * /v1/user/unblockUser - PUT method, userId
 * /v1/user/createUserTokenKey - POST method
-* /v1/user/updatePassword -PUT method, (userId, password)
+* /v1/user/updatePassword - PUT method, (userId, password)
 
 Order
 * /v1/order/getOrders - GET method, no parameters
