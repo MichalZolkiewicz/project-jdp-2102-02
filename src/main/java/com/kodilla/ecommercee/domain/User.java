@@ -23,7 +23,8 @@ public class User {
     private List<Cart> carts = new ArrayList<>();
 
 
-    public User(String userName, String email) {
+    public User(int userId, String userName, String email) {
+        this.userId = userId;
         this.userName = userName;
         this.email = email;
     }

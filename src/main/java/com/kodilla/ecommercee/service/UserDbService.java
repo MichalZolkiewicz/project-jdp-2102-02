@@ -5,6 +5,7 @@ import com.kodilla.ecommercee.domain.UserDao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Random;
 
 @Service
@@ -17,21 +18,23 @@ public class UserDbService {
         return userDao.save(user);
     }
 
-    public void deleteUserByUserName(String userName) {
-        userDao.deleteUserByUserName(userName);
+    public void deleteUser(final int userId) {
+        userDao.deleteById(userId);
     }
 
-    public void blockUserByUserId(int userId) {
-        User user = new User();
-        user.setStatus(false);
-    }
-
-    public String saveTokenUserKey(String email) {
-        User user = new User();
+    public User saveTokenUserKey(User user) {
         Random random = new Random();
         String tokenUserKey = String.valueOf(random.nextInt(99999999)) ;
         user.setTokenUserKey(tokenUserKey);
-        return tokenUserKey;
+        return user;
+    }
+
+    public User getUser(final int userId) {
+        return userDao.findById(userId);
+    }
+
+    public List<User> getAllUsers() {
+        return userDao.findAll();
     }
 }
 
