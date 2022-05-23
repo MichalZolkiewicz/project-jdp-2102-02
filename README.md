@@ -10,9 +10,9 @@ Project is not uploaded to remote server yet.
 
 * Java Virtual Machine
 * MySQL
-* Gradle 4.10.2
+* Gradle 7.4.2
 * Spring Boot 2.1.1
-* Lombok 1.18.16
+* Lombok 1.18.24
 
 ### Running the project
 
